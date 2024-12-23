@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		955519632D15809000AC85AA /* CountryPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 955519622D15809000AC85AA /* CountryPicker */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		9562C9342D0C3C0B001980D7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				955519632D15809000AC85AA /* CountryPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +130,7 @@
 			);
 			name = OnlineGroceriesSwiftUI;
 			packageProductDependencies = (
+				955519622D15809000AC85AA /* CountryPicker */,
 			);
 			productName = OnlineGroceriesSwiftUI;
 			productReference = 9562C9232D0C3C08001980D7 /* OnlineGroceriesSwiftUI.app */;
@@ -208,6 +214,9 @@
 			);
 			mainGroup = 9562C91A2D0C3C08001980D7;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				955519612D15808F00AC85AA /* XCRemoteSwiftPackageReference "CountryPicker" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9562C9242D0C3C08001980D7 /* Products */;
 			projectDirPath = "";
@@ -420,6 +429,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,6 +466,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -585,6 +596,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		955519612D15808F00AC85AA /* XCRemoteSwiftPackageReference "CountryPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobven/CountryPicker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		955519622D15809000AC85AA /* CountryPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 955519612D15808F00AC85AA /* XCRemoteSwiftPackageReference "CountryPicker" */;
+			productName = CountryPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9562C91B2D0C3C08001980D7 /* Project object */;
 }
